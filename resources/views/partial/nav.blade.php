@@ -1,22 +1,27 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
-    <div class="container-fluid">
-        <a class="navbar-brand" href={{ route('home') }}>Home</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link {{ $page === "section1" ? "active" : "" }}" href={{ route('section1') }}>Section1</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link {{ $page === "section2" ? "active" : "" }}" href={{ route('section2') }}>Section2</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link {{ $page === "section3" ? "active" : "" }}" href={{ route('section3') }}>Section3</a>
-                </li>
-            </ul>
-        </div>
+ <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="products.html">Products</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="store.html">Store</a>
+          </li>
+        </ul>
+      </div>
     </div>
 </nav>
