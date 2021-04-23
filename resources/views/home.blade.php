@@ -1,15 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
+    @include('partial.title')
     @include('partial.nav')
-    <h1 class="site-heading text-center text-white d-none d-lg-block">
-        <span class="site-heading-upper text-primary mb-3">A Free Bootstrap 4 Business Theme</span>
-        <span class="site-heading-lower">Business Casual</span>
-    </h1>
-    
      
-    
-      <section class="page-section clearfix">
+    <section class="page-section clearfix">
         <div class="container">
           <div class="intro">
             <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="img/intro.jpg" alt="">
@@ -26,9 +21,9 @@
             </div>
           </div>
         </div>
-      </section>
+    </section>
     
-      <section class="page-section cta">
+    <section class="page-section cta">
         <div class="container">
           <div class="row">
             <div class="col-xl-9 mx-auto">
@@ -42,6 +37,7 @@
             </div>
           </div>
         </div>
-      </section>
+    </section>
+    
     @include('partial.footer')
 @endsection
